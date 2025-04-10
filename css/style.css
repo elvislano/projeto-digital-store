@@ -154,74 +154,72 @@ main {
         .colecoes {
             display: flex;
             gap: 12px;
-            
 
-            .departamentos{
-                display: flex;
-               justify-content: center;
-               
-               .icon{
+
+            &>div {
+                position: relative;
+                padding-top: 34px;
+                padding-bottom: 34px;
+                padding-left: 30px;
+                border-radius: 8px;
+                background-color: #D8E3F2;
+                flex: 1;
+            }
+
+            & .conteudo {
+                position: relative;
+                z-index: 1;
+            }
+
+            h6 {
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 32px;
+                padding: 0 15px;
+                border-radius: 20px;
+                background-color: #E7FF86;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 32px;
+                margin-bottom: 20px;
+            }
+
+            .btn {
+                width: 150px;
+            }
+
+            img {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+
+            }
+        }
+
+        &+h3 {
+            text-align: center;
+        }
+
+        .departamentos {
+            display: flex;
+            justify-content: center;
+            gap: 48px;
+
+            .icon {
                 width: 104px;
-                height: 104px; 
+                height: 104px;
                 border-radius: 50%;
                 background-color: white;
-                margin-bottom: 12px;]
+                margin-bottom: 12px;
                 border: 1px solid red;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            
-            img
-            width: 64px;
             }
 
-            &>div {
-                background-color: #d8e3f2;
-                flex: 1;
-                padding-left: 30px;
-                padding-top: 34px;
-                padding-bottom: 34px;
-                position: relative;
-                border-radius: 8px;
-
-                & .conteudo {
-                    position: relative;
-                    z-index: 1;
-                }
-
-                h6 {
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    line-height: 32px;
-                    padding: 0 15px;
-                    border-radius: 20px;
-                    background-color: #E7FF86;
-                    display: inline-block;
-                    margin-bottom: 10px;
-                }
-
-                h2 {
-                    font-size: 32px;
-                    margin-bottom: 20px;
-                }
-
-                .btn {
-                    width: 150px;
-                }
-
-                img {
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-
-                }
-
-            
-            }
-
-            &+h3 {
-                text-align: center;
-            }
         }
     }
 }
